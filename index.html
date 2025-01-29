@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawrence Chiwaya - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lawrence Chiwaya</h1>
+        <p>DevOps Engineer | Cloud Enthusiast | Automation Specialist</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav>
+        <ul class="tabs">
+            <li><a href="#about" class="active">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Lawrence Chiwaya, a passionate DevOps Engineer with expertise in cloud computing, CI/CD pipelines, infrastructure as code, and automation. I enjoy solving complex problems and optimizing workflows to deliver scalable and reliable systems.
+        </p>
+        <p>
+            With a strong background in software development and system administration, I bridge the gap between development and operations to ensure seamless delivery of high-quality software.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="tab-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Platforms: AWS, Azure, GCP</li>
+            <li>CI/CD Tools: Jenkins, GitLab CI, GitHub Actions</li>
+            <li>Containerization: Docker, Kubernetes</li>
+            <li>Infrastructure as Code: Terraform, Ansible, CloudFormation</li>
+            <li>Scripting: Python, Bash, PowerShell</li>
+            <li>Monitoring: Prometheus, Grafana, ELK Stack</li>
+            <li>Version Control: Git, GitHub, GitLab</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="tab-content">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>DevOps Engineer - XYZ Company</h3>
+            <p><em>Jan 2021 - Present</em></p>
+            <ul>
+                <li>Designed and implemented CI/CD pipelines for multiple projects.</li>
+                <li>Managed cloud infrastructure on AWS using Terraform.</li>
+                <li>Automated deployment processes, reducing deployment time by 30%.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>System Administrator - ABC Corp</h3>
+            <p><em>Jun 2018 - Dec 2020</em></p>
+            <ul>
+                <li>Maintained and optimized on-premise and cloud servers.</li>
+                <li>Implemented monitoring solutions to improve system reliability.</li>
+                <li>Collaborated with developers to streamline deployment workflows.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated CI/CD Pipeline</h3>
+            <p>Built a Jenkins-based CI/CD pipeline for a microservices architecture, reducing manual intervention and improving deployment frequency.</p>
+        </div>
+        <div class="project">
+            <h3>Kubernetes Cluster Setup</h3>
+            <p>Deployed and managed a Kubernetes cluster on AWS for a scalable application, ensuring high availability and fault tolerance.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <ul>
+            <li>Email: <a href="mailto:lawrence.chiwaya@example.com">lawrence.chiwaya@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/lawrence-chiwaya" target="_blank">Lawrence Chiwaya</a></li>
+            <li>GitHub: <a href="https://github.com/lawrencechiwaya" target="_blank">lawrencechiwaya</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Lawrence Chiwaya. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tabs a");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs and content
+                    tabs.forEach((t) => t.classList.remove("active"));
+                    tabContents.forEach((content) => content.classList.remove("active"));
+
+                    // Add active class to the clicked tab and corresponding content
+                    tab.classList.add("active");
+                    document.querySelector(tab.getAttribute("href")).classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
