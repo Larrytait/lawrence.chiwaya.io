@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Tab Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #444;
+}
+
+.tabs li {
+    margin: 0;
+}
+
+.tabs a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.tabs a.active {
+    background: #0077b5;
+}
+
+.tabs a:hover {
+    background: #005f8b;
+}
+
+/* Tab Content Styles */
+.tab-content {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Background Colors for Sections */
+#about {
+    background-color: #e3f2fd; /* Light Blue */
+}
+
+#skills {
+    background-color: #f0f4c3; /* Light Yellow */
+}
+
+#experience {
+    background-color: #ffccbc; /* Light Orange */
+}
+
+#projects {
+    background-color: #d1c4e9; /* Light Purple */
+}
+
+#contact {
+    background-color: #c8e6c9; /* Light Green */
+}
